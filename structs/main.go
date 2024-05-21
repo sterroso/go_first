@@ -18,7 +18,7 @@ func PersonFactory(firstName string, middleName string, lastName string, isWalki
 	}
 }
 
-func (p *Person) SetFirstName(firstName string) {
+func (p *Person) setFirstName(firstName string) {
 	p.FirstName = firstName
 }
 
@@ -29,7 +29,7 @@ func main() {
 
 	myPerson.IsWalking = true
 
-	myPerson.SetFirstName("Silvia")
+	myPerson.setFirstName("Silvia")
 
 	if myPerson.IsWalking {
 		walkingState = "is"
