@@ -2,9 +2,9 @@
 
 This is my working project.
 
-## Installing Go
+## ⚙️ Installing Go
 
-1. Download the right Go version from the
+1. ⬇️ Download the right Go version from the
    [download page](https://go.dev/dl/) and save it to your home directory.
    
    The file name might look something like: go<_version_>.<_osarch_>.<_ext_>,
@@ -39,15 +39,15 @@ This is my working project.
    if [[ $(sha256sum go1.22.3.linux-amd64.tar.gz) = '8920ea521bad8f6b7bc377b4824982e011c19af27df88a815e3586ea895f1b36  go1.22.3.linux-amd64.tar.gz' ]] { print Ok } else { print 'Checksum does not match' }
    ```
 
-2. Remove any previous version from the `/usr/local` and home directory:
+2. ❌ Remove any previous version from the `/usr/local` and home directory:
    ```
    sudo rm -rf /usr/local/go && rm -rf ~/go
    ```
-3. Unzip your recently donwnloaded file into the `/usr/local` directory:
+3. 📂 Unzip your recently donwnloaded file into the `/usr/local` directory:
    ```
    sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
    ```
-4. Make sure to have the Go path in your `.profile`, `.bashrc` or `.zshrc`
+4. 📝 Make sure to have the Go path in your `.profile`, `.bashrc` or `.zshrc`
    file. Add the following lines if not already present:
    ```
    # Set the Go PATH only if the directory exists
@@ -55,15 +55,15 @@ This is my working project.
        export PATH=$HOME/go/bin:/usr/local/go/bin:$PATH
    fi
    ```
-5. Load the Go path by sourcing the corresponding file:
+5. 💻 Load the Go path by sourcing the corresponding file:
    ```
    source ~/.profile
    ```
-6. Verify you Go installation:
+6. ✅ Verify you Go installation:
    ```
    go version
    ```
-7. Optionally, cleanup downloaded file
+7. 🧹 Optionally, cleanup downloaded file
    ```
    rm go1.22.3.linux-amd64.tar.gz
    ```
