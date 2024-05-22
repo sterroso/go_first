@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 const (
 	PI = 3.141592653589
@@ -15,7 +18,7 @@ func (c Circle) GetPerimeter() float64 {
 }
 
 func (c Circle) GetArea() float64 {
-	return c.Radius * c.Radius * PI
+	return PI * math.Pow(c.Radius, 2)
 }
 
 func main() {
